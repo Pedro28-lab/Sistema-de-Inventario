@@ -1,0 +1,642 @@
+body {
+
+	font-family: 'Karla', sans-serif;
+	color: rgba(255,255,255);
+}
+
+.fondo {
+
+	width: 61.2em;
+	height: 100%;
+	background-image: url("..\\Imagenes\\Fondo_Para_Telefono.jpg");
+	background-size: cover;
+	background-attachment: fixed;   /* fixed me gusto bastante, si se mueve la barra scroll la imagen hace el efecto de ese movimiento, muy bueno nwn*/
+	background-repeat: no-repeat;
+
+}
+
+.fondo img {
+
+	width: 100%;
+	height: 100%
+
+}
+
+.header {
+
+	height: 40em;
+	width: 100%;
+	background-color: rgba(0,0,0,0.7);
+	display: grid;
+	clip-path: polygon(100% 0, 100% 100%, 50% 60%, 0 100%, 0 0);
+}
+
+.header:hover {
+
+	background-color: rgba(0,0,0,0.9);
+
+}
+
+.header__h1 {
+
+	text-align: center;
+	font-size: 10em;
+	font-family: 'Spectral', serif;
+	padding: 0;
+	margin: 0;
+
+}
+
+.navegador {
+
+	background-color: rgba(0,0,0,0.7);
+	text-align: center;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	height: 15em;
+	width: 100vw;
+	margin-top: 1em;
+	font-family: 'Spectral', serif;
+}
+
+.navegador:hover {
+
+	background-color: rgba(0,0,0,0.9);
+
+}
+
+.navegador ul li{
+
+	padding: 0;
+	margin: 0;
+	display: inline-flex;
+	font-size: 6em;
+	padding-right: 1.5em;
+	padding-left: 1.5em; 
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
+}
+
+a:visited, a:link, a:active {
+
+	text-decoration: none;
+	color: rgb(255,0,0);
+
+}
+
+a:hover {
+
+	text-decoration-line: underline;
+
+}
+
+.Resaltar a {
+
+	text-decoration-line: underline;
+
+}
+
+.navegador__figura {
+
+	display: inline-block;
+	width: 0em;	
+
+}
+
+.Informacion_Principal {
+
+	width: 61.2em;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10em;
+
+}
+
+.Informacion_Principal__div {
+
+	padding: 4em;
+	width: 90%;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	background-color: rgba(127, 127, 127, 0.8);
+	border-radius: 9.5em;
+	flex-wrap: wrap;			
+
+}
+
+.Informacion_Principal__div:hover {
+
+	background-color: rgba(127, 127, 127, 0.9);
+}
+
+.Informacion_Principal__div figure {
+
+	min-width: 90%;
+	max-width: 90%;
+
+}
+
+.Informacion_Principal__div figure img{
+
+	width: 100%;
+	/*clip-path: circle(39% at 50% 50%); En este caso no lo veo necesario, se ve mejor sin ello*/
+
+}
+
+.Informacion_Principal__div div{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	flex-wrap: wrap;
+
+}
+
+.Informacion_Principal__div div h2{
+
+	font-size: 7.5em;
+	text-align: center;
+	font-family: 'Spectral', serif;
+	padding-bottom: 2%;
+}
+
+.Informacion_Principal__div div p{
+
+	font-size: 3em;
+	text-align: center;
+	padding-right: 5%;
+	margin: auto;
+
+}
+
+.Conjunto_De_Cartas{
+
+	padding: 1.5em;
+	width: 61.2em;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 5em;
+
+}
+
+.Conjunto_De_Cartas .Carta{
+
+	padding: 2.5em 1.5em;
+	width: 80%;
+
+}
+
+.Conjunto_De_Cartas .Info_De_Carta{
+
+	background-color: rgba(127, 127, 127, 0.8);
+	border-radius: 9.5em;
+	padding: 2.5em 2em;
+	max-height: 100%; 
+	width: 100%;
+
+}
+
+.Conjunto_De_Cartas .Info_De_Carta:hover {
+
+	background-color: rgba(127, 127, 127, 0.9);
+
+}
+
+.Conjunto_De_Cartas .Imagen_De_Carta img{
+
+	width: 100%;
+	height: 25em;
+	margin-bottom: 0.5em;
+	/* clip-path: circle(39% at 50% 50%); Nuevamente, no es necesario */
+
+}
+
+.Conjunto_De_Cartas .Carta .Titulo_De_Carta h2{
+
+	font-weight: bold;
+	/* puede ser util si la informacion no la manejra yo, pero como yo la manejo es algo x
+	height: 3em;
+	line-height: 1.5em;
+	*/
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	font-size: 3.5em;
+	font-family: 'Spectral', serif;
+	padding-bottom: 1em;
+	/*
+	overflow:hidden;
+    text-overflow: ellipsis;
+    */
+}
+
+.Conjunto_De_Cartas .Carta .Eslogan_De_Carta{
+
+	/*
+	height: 6em;
+	line-height: 2em;
+	*/
+	font-weight: bold;	
+	font-size: 3.5em;
+	font-family: 'Spectral', serif;
+	padding-bottom: 1em;
+	/*
+	overflow:hidden;
+    text-overflow: ellipsis;
+    */
+}
+
+.Conjunto_De_Cartas .Carta .Descripcion_De_Carta{
+
+	font-size: 3em;
+	/*
+	height: 9em;
+	line-height: 1.5em;
+	overflow:hidden;
+    text-overflow: ellipsis;
+    */
+}
+
+.Boton_Carta {
+
+	width: 5em;
+	font-size: 4em;
+	padding: 0.2em;
+	margin-bottom: 1em;
+	background-color: rgba(255,77,240,0.8);
+	border-radius: 0.5em;
+	border: solid;
+
+}
+
+.Boton_Carta:hover {
+
+	text-decoration-line: none;
+
+}
+
+.Boton_Carta:active {
+
+	background-color: rgba(255,77,240,1);
+
+}
+
+
+.footer {
+
+	background-color: rgba(0,0,0,0.7);
+	font-family: 'Spectral', serif;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 35em;
+	width: 100vw;
+
+}
+
+.footer:hover {
+
+	background-color: rgba(0,0,0,0.9);
+
+}
+
+
+.footer_p {
+
+	font-size: 4em;
+	padding: 0 1.5em;
+
+}
+
+.Tabla_Container {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 2em;
+
+}
+
+.Tabla_De_Carro{
+
+	border-collapse: collapse;
+	width: 60em;
+	background-color: rgba(255, 0, 234, 0.8);
+
+}
+
+.Tabla_De_Carro:hover{
+
+	background-color: rgba(255, 0, 234, 0.9);
+
+}
+
+tr td {
+
+	border: 0.15em solid white;
+	text-align: center;
+	padding: 0.2em;
+	font-size: 4em;
+
+}
+
+.Botones_Carro {
+
+	width: 1.5em;
+	font-size: 2em;
+	background-color: rgba(255,77,240,0.8);
+	border-radius: 1em;
+	border: solid;
+
+}
+
+.Botones_Carro:hover {
+
+	text-decoration-line: none;
+
+}
+
+.Botones_Carro:active {
+
+	background-color: rgba(255,77,240,1);
+
+}
+
+.Conjunto_De_Cartas .Carta .Titulo_De_Carta_Producto h2{
+
+	font-weight: bold;
+	height: 3em;
+	line-height:1.5em;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	font-size: 4em;
+	font-family: 'Spectral', serif;
+	overflow:hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 4em;
+}
+
+.Conjunto_De_Cartas .Carta .Efecto_De_Carta{
+
+	height: 3em;
+	line-height: 1em;
+	font-size: 6em;
+	font-family: 'Spectral', serif;
+	overflow:hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 2em;
+}
+
+.Conjunto_De_Cartas .Carta .Precio_De_Carta{
+
+	font-size: 6em;
+	height: 3em;
+	line-height: 1.5em;
+	overflow:hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 2em;
+}
+
+.Categorias {
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 5em;
+
+}
+
+/*Responsive */
+
+@media screen and (min-width: 1025px) {
+
+	.fondo{
+
+		background-image: url("..\\Imagenes\\Fondo_Para_Ordenadores.jpg");
+
+	}
+
+	.header {
+
+		height: 25vh;
+		width: 100vw;
+
+	}
+
+	.header__h1 {
+
+		font-size: 6vw;
+
+	}
+
+	.navegador {
+
+		height: 10vh;
+		margin-top: 2vh;
+
+	}
+
+	.navegador ul li{
+
+		font-size: 3vw;
+		padding-right: 1.5vw;
+		padding-left: 1.5vw; 
+
+	}
+
+	.navegador__figura {
+
+		width: 3vw;	
+
+	}
+
+	.Informacion_Principal {
+
+		width: 100vw;
+		margin-top: 10vh;
+
+	}
+
+	.Informacion_Principal__div {
+
+		padding: 0.9vw;
+		width: 90%;
+		border-radius: 7.5vw;	
+		flex-wrap: nowrap;		
+
+	}
+
+	.Informacion_Principal__div figure {
+
+		min-width: 40%;
+		max-width: 40%;
+
+	}
+
+	.Informacion_Principal__div figure img{
+
+		width: 100%;
+
+	}
+
+	.Informacion_Principal__div div h2{
+
+		font-size: 360%;
+		padding-bottom: 2%;
+	}
+
+	.Informacion_Principal__div div p{
+
+		font-size: 200%;
+		padding-right: 5%;
+
+	}
+
+	.Conjunto_De_Cartas{
+
+		padding: 2.5vw;
+		width: 100vw;
+		margin-bottom: 5vh;
+
+	}
+
+	.Conjunto_De_Cartas .Carta{
+
+		padding: 2.5vh 1.5vw;
+		width: 33%;
+
+	}
+
+	.Conjunto_De_Cartas .Info_De_Carta{
+
+		border-radius: 7.5vw;
+		padding: 2.5vh 2vw;
+		max-height: 100%; 
+		width: 100%;
+
+	}
+
+	.Conjunto_De_Cartas .Imagen_De_Carta img{
+
+		width: 100%;
+		height: 40vh;
+		margin-bottom: 1.2vh;
+
+	}
+
+	.Conjunto_De_Cartas .Carta .Titulo_De_Carta h2{
+
+		height: 22vh;
+		line-height: 7.5vh;
+		letter-spacing: 0.2vw;
+		font-size: 2.5vw;
+
+	}
+
+	.Conjunto_De_Cartas .Carta .Eslogan_De_Carta{
+
+		height: 17vh;
+		line-height: 6vh;
+		font-size: 1.8vw;
+		margin: 1vh 0.5vw;
+
+	}
+
+	.Conjunto_De_Cartas .Carta .Descripcion_De_Carta{
+
+		font-size: 1.6vw;
+		margin: 1vh 0;
+		height: 40vh;
+		line-height: 7vh;
+
+	}
+
+	.footer {
+
+		height: 60vh;
+
+	}
+
+	.footer_p {
+
+		font-size: 4vw;
+		padding: 0 1.5vw;
+
+	}
+
+	.Tabla_De_Carro{
+
+		width: 80vw;
+
+	}
+
+	tr td {
+
+		border: 0.35vw solid white;
+		padding: 0.7vw;
+		font-size: 3vw;
+
+	}
+
+	.Botones_Carro {
+
+		width: 1.5vw;
+		font-size: 3vw;
+		border-radius: 1vw;
+
+	}
+
+	.Conjunto_De_Cartas .Carta .Titulo_De_Carta_Producto h2{
+
+		height: 16vh;
+		line-height: 8vh;
+		letter-spacing: 0.2vw;
+		font-size: 2vw;
+	    padding-bottom: 5vh;
+	}
+
+	.Conjunto_De_Cartas .Carta .Efecto_De_Carta{
+
+		height: 16vh;
+		line-height: 8vh;
+		font-size: 2vw;
+	    padding-bottom: 5vh;
+	}
+
+	.Conjunto_De_Cartas .Carta .Precio_De_Carta{
+
+		font-size: 3vw;
+		height: 16vh;
+		line-height: 8vh;
+	    padding-bottom: 5vh;
+	}
+
+	.Boton_Carta {
+
+		width: 50%;
+		margin-bottom: 1vw;
+		padding: 0.2vw;
+		font-size: 2vw;
+		border-radius: 1vw;
+
+	}
+
+	.Categorias {
+
+		font-size: 4vw;
+
+	}
+
+
+
+}
